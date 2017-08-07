@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>{{ article.title }}</h3>
+<p>{{ article.date_publish | date:'Y-m-d' }} | {{ article.user }}</p>
+<p>{{ article.content | safe }}</p> 
+{% endblock %}
